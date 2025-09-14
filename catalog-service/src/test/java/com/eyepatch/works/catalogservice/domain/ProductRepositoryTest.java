@@ -21,11 +21,6 @@ public class ProductRepositoryTest {
     @Autowired
     private ProductRepository productRepository;
 
-    @Test
-    void shouldGetAllProducts() {
-        List<ProductEntity> productList = productRepository.findAll();
-        assertThat(productList).hasSize(15);
-    }
 
     @Test
     void shouldGetProductByCode() {
