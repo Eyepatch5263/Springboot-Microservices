@@ -7,10 +7,9 @@ import static org.hamcrest.Matchers.is;
 import com.eyepatch.works.catalogservice.AbstractIT;
 import com.eyepatch.works.catalogservice.domain.Product;
 import io.restassured.http.ContentType;
+import java.math.BigDecimal;
 import org.junit.jupiter.api.Test;
 import org.springframework.test.context.jdbc.Sql;
-
-import java.math.BigDecimal;
 
 @Sql("/test-data.sql")
 public class ProductControllerTest extends AbstractIT {
