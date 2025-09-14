@@ -6,8 +6,7 @@ import jakarta.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
 @Entity
-@Table(name="products")
- class ProductEntity {
+@Table(name="products") class ProductEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "product_id_generator")
     @SequenceGenerator(name = "product_id_generator",sequenceName = "Product_id_seq")
@@ -60,27 +59,4 @@ import java.math.BigDecimal;
         return price;
     }
 
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
 }

@@ -7,6 +7,8 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 @Service
 @Transactional // it tells that the product service layer will be transactional since this layer deals with DB by making some transactional call like insert,update, delete any query so if it's successfully able to make the db call then only we want the transaction to happen but in case some exception or error occurs we want it to roll back.
 public class ProductService {
@@ -33,5 +35,9 @@ public class ProductService {
                 productPage.hasNext(),
                 productPage.hasPrevious()
         );
+    }
+
+    public Optional<Product> getProductByCode(String code){
+        return productRepository.findByCode(code).map(ProductWrapper::toProduct);
     }
 }
