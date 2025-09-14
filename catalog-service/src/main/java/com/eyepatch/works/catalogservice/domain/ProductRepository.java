@@ -1,6 +1,6 @@
 package com.eyepatch.works.catalogservice.domain;
-import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 interface ProductRepository extends JpaRepository<ProductEntity,Long> {
     Optional<ProductEntity> findByCode(String code);

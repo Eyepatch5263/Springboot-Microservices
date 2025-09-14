@@ -5,7 +5,6 @@ import static org.hamcrest.Matchers.is;
 
 import com.eyepatch.works.catalogservice.AbstractIT;
 import io.restassured.http.ContentType;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.test.context.jdbc.Sql;
 
