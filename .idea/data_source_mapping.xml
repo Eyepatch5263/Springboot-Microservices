@@ -2,6 +2,7 @@
 <project version="4">
   <component name="DataSourcePerFileMappings">
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/4816f5c6-63d7-44af-a9d8-dd388e425d14/console.sql" value="4816f5c6-63d7-44af-a9d8-dd388e425d14" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/68d74a77-7e6b-4b23-b72b-2a07fc03341a/console.sql" value="68d74a77-7e6b-4b23-b72b-2a07fc03341a" />
     <file url="file://$PROJECT_DIR$/catalog-service/src/main/resources/db/migration/V1__create_products_table.sql" value="4816f5c6-63d7-44af-a9d8-dd388e425d14" />
   </component>
 </project>
